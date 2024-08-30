@@ -1,0 +1,236 @@
+:root {
+    --color-primario: rgba(34, 212, 253, 1);
+    ;
+    --color-secundario: #f3f3f3;
+    --color-fuentes: black;
+    --fuente: "Montserrat";
+    --color-botones: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-secundario);
+}
+
+.encabezado {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    font-family: var(--fuente);
+    background-color: var(--color-primario);
+    /* font-family: var(--fuente);*/
+}
+
+.titulo {
+    font-size: clamp(1rem, 4vw, 2.6rem);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion a {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--color-fuentes);
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    background-color: white;
+    border-radius: 1rem;
+    border: .1rem solid black;
+}
+
+.main {
+    font-family: var(--fuente);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem;
+    padding: 7rem;
+    height: 100vh;
+}
+
+.derecho {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+}
+
+.entradas {
+    padding: clamp(1rem, 2vw, 1.3rem);
+    border: none;
+    outline: none;
+    width: 100%;
+
+}
+
+.botones {
+    display: flex;
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.entradas_boton {
+    padding: clamp(.8rem, 2vw, 1rem);
+    border: none;
+    background-color: var(--color-botones);
+    color: white;
+    font-family: var(--fuente);
+    font-weight: 500;
+    border-radius: 1rem;
+
+}
+
+.entradas_boton:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-botones);
+    border: solid .2rem var(--color-botones);
+    border-radius: 1rem;
+}
+
+.izquierdo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.izquierdo h2 {
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+textarea {
+    field-sizing: content;
+    resize: none;
+    padding: 1rem;
+    width: 100%
+    
+}
+
+textarea:focus {
+    outline-color: var(--color-primario);
+}
+
+.footer {
+    background-color: var(--color-fuentes);
+    max-width: 100%;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+
+
+}
+
+.footer p {
+    text-align: center;
+    font-family: var(--fuente);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.menu_salida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+
+}
+
+.enlaces_footer {
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    text-decoration: none;
+
+}
+
+.enlaces_footer i {
+    padding: 1rem;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+
+}
+
+@media(max-width:1200px) {
+    .encabezado {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navegacion {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .derecho {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu_salida {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario {
+        padding: 0;
+    }
+
+    .izquierdo {
+        width: 100%;
+    }
+
+}

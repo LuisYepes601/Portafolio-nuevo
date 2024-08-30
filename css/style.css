@@ -1,0 +1,277 @@
+:root {
+    --color-primario: rgba(34, 212, 253, 1); ;
+    --color-secundario: #f3f3f3;
+    --color-fuentes: black;
+    --fuente: "Montserrat";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-secundario);
+}
+
+.encabezado {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    font-family: var(--fuente);
+    background-color: var(--color-primario);
+    /* font-family: var(--fuente);*/
+}
+
+.titulo {
+    font-size: clamp(1rem, 4vw, 2.6rem);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion a {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--color-fuentes);
+}
+
+.navegacion a:hover {
+    background-color: white;
+    border-radius: 1rem;
+    border: .1rem solid black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.texto {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Krona One;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    padding: 1rem 0;
+
+}
+
+span {
+    color: var(--color-primario);
+
+}
+
+p {
+    font-family: Montserrat;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    padding: 1rem 0;
+
+}
+
+.botones {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+}
+
+.boton {
+    width: 60%;
+    padding: 1rem;
+    background-color: rgba(34, 212, 253, 1);
+    font-family: var(--fuente);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+    line-height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    color: var(--color-fuentes);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.boton:hover {
+    background-color: #f3f3f3;
+    border: .12rem solid black;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-fuentes);
+
+
+}
+
+.imagen {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.imagen_portafolio {
+    max-width: 100%;
+    background-color: aquamarine;
+}
+
+.footer {
+    background-color: var(--color-fuentes);
+    max-width: 100%;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.footer p {
+    text-align: center;
+    font-family: var(--fuente);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.menu_salida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+
+}
+
+.enlaces_footer {
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+
+}
+
+.enlaces_footer i {
+    padding: 1rem;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+
+}
+
+
+@media(max-width: 1200px) {
+    .encabezado {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navegacion {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .imagen {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .imagen_portafolio {
+        width: 100%;
+        margin-bottom: .5;
+
+    }
+
+    .texto {
+        width: 70%;
+        height: auto;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .boton {
+        min-width: 60%;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu_salida {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo_negocio {
+        width: 100%;
+    }
+}
+
+@media(max-width:600px) {
+    .botones {
+        gap: 1rem;
+    }
+
+    .imagen,
+    .texto {
+        margin-bottom: 2rem;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .imagen_portafolio {
+        margin-top: 1rem;
+    }
+
+}

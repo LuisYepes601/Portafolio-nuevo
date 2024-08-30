@@ -1,0 +1,229 @@
+:root {
+    --color-primario: rgba(34, 212, 253, 1); ;
+    --color-secundario: #f3f3f3;
+    --color-fuentes: black;
+    --fuente: "Montserrat";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-secundario);
+}
+
+.encabezado {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    font-family: var(--fuente);
+    background-color: var(--color-primario);
+    /* font-family: var(--fuente);*/
+}
+
+.titulo {
+    font-size: clamp(1rem, 4vw, 2.6rem);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion a {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--color-fuentes);
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    background-color: white;
+    border-radius: 1rem;
+    border: .1rem solid black;
+}main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--fuente);
+    font-weight: 400;
+    
+
+}.derecho{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    
+    
+
+    
+}.informacion_personal{
+    padding: 1rem 0;
+   
+   
+}.imagen_personal{
+    width: 10rem;
+    height: auto;
+}.titulo_info{
+    padding-bottom: .5rem;
+    font-size: clamp(1rem, 3vw, 1.8rem);
+    color: var(--color-primario);
+
+}.contenido_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}.texto_informativo{
+    font-size: clamp(1rem, 2vw, 1.1rem);
+}.experiencia{
+    padding: 1rem 0;
+}.imagenes_experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}i{
+    font-size: 5rem;
+    color: var(--color-primario);
+    font-size: clamp(1rem, 10vw, 3rem);
+    
+}.imagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}.proyectos{
+    padding: 1rem 0;
+}.footer {
+    background-color: var(--color-fuentes);
+    max-width: 100%;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    
+    
+
+}
+
+.footer p {
+    text-align: center;
+    font-family: var(--fuente);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.menu_salida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+
+}
+
+.enlaces_footer {
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    text-decoration: none;
+
+}
+
+.enlaces_footer i {
+    padding: 1rem;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+
+}.proyectos-enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}.proyectos-enlaces a{
+    display: inline-block;
+    padding: clamp(.5rem, 1vw, 1rem);
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: var(--color-primario);
+    margin: .8rem;
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    color: black;
+    font-weight: 500;
+
+}.enlaces_proyecto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.proyectos-enlaces a:hover{
+    background-color: var(--color-secundario);
+    border: 1px solid black;
+}.imagen-encriptador{
+    width: 50%;
+}.texto_encriptador{
+    padding-top: 1rem;
+    font-size: clamp(1rem, 3vw, 1.8rem);
+    color: var(--color-primario);
+    
+}
+@media(max-width: 1200px) {
+    .encabezado {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navegacion {
+        width: 100%;
+        flex-direction: column;
+    }.imagenes{
+        flex-direction: row;
+        gap: 1rem;
+    } .derecho{
+        padding-top: 2rem;
+    }.footer {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu_salida {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo_negocio {
+        width: 100%;
+    }.contenido_principal{
+        flex-direction: column;
+    }.informacion_personal h2{
+        text-align: center;
+    }
+}@media(max-width: 700px){
+    .imagen-encriptador{
+        width: 100%;
+    }
+}
