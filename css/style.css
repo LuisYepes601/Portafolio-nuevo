@@ -24,6 +24,8 @@ body {
     font-family: var(--fuente);
     background-color: var(--color-primario);
     /* font-family: var(--fuente);*/
+    position: sticky;
+    top: 0;
 }
 
 .titulo {
@@ -181,6 +183,14 @@ a {
     padding: 1rem;
     font-size: clamp(1.5rem, 5vw, 2.5rem);
 
+}.logo-fijo{
+    font-size: clamp(1.5rem,5vw,4em);
+    position: fixed;
+    bottom: 1rem;
+    right: .5rem;
+    color: #25D366;
+}.logo-fijo:hover{
+    color: var(--color-primario);
 }
 
 
@@ -190,6 +200,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 1rem;
 
     }
 
@@ -272,6 +283,10 @@ a {
 
     .imagen_portafolio {
         margin-top: 1rem;
+    }.logo-fijo{
+        font-size: 3rem;
+        bottom: 2rem;
+        right: 1rem;
     }
 
 }
