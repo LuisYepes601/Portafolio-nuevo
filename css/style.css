@@ -13,6 +13,8 @@
 
 body {
     background-color: var(--color-secundario);
+    
+   
 }
 
 .encabezado {
@@ -29,7 +31,7 @@ body {
 }
 
 .titulo {
-    font-size: clamp(1rem, 4vw, 2.6rem);
+    font-size: clamp(1rem, 5vw, 3rem);
 }
 
 .navegacion {
@@ -152,6 +154,9 @@ a {
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+   margin-bottom: 0;
+   
+    
 
 }
 
@@ -284,7 +289,7 @@ a {
     .imagen_portafolio {
         margin-top: 1rem;
     }.logo-fijo{
-        font-size: 3rem;
+        font-size:1.7rem;
         bottom: 2rem;
         right: 1rem;
     }

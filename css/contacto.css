@@ -70,6 +70,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3rem 0;
+}.derecho h2{
+    font-size: clamp(1rem,2vw, 1.5rem);
+    margin-top: 1rem;
 }
 
 .formulario {
@@ -93,7 +96,8 @@ body {
     gap: clamp(1rem, 2.5vw, 1.5rem);
     justify-content: center;
     align-items: center;
-    width: auto;
+    
+    
 }
 
 .entradas_boton {
@@ -148,6 +152,8 @@ textarea:focus {
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    margin-top: 1rem;
+    
 
 
 
@@ -182,6 +188,14 @@ textarea:focus {
     padding: 1rem;
     font-size: clamp(1.5rem, 5vw, 2.5rem);
 
+}.logo-fijo{
+    font-size: clamp(1.5rem,5vw,4em);
+    position: fixed;
+    bottom: 1rem;
+    right: .5rem;
+    color: #25D366;
+}.logo-fijo:hover{
+    color: var(--color-primario);
 }
 
 @media(max-width:1200px) {

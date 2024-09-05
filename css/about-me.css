@@ -182,6 +182,14 @@ body {
     font-size: clamp(1rem, 3vw, 1.8rem);
     color: var(--color-primario);
     
+}.logo-wpp i{
+    font-size: clamp(1.5rem,5vw,4em);
+    position: fixed;
+    bottom: 1rem;
+    right: .5rem;
+    color: #25D366;
+}.logo-wpp i:hover{
+    color: var(--color-primario);
 }
 @media(max-width: 1200px) {
     .encabezado {
